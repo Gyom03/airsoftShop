@@ -1,0 +1,187 @@
+html{
+  font-family: "Poppins","Calibri","sans-serif";
+  src: url('fonts/Poppins-Medium.ttf');
+  
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+body{
+  margin: 0;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #393E46;
+}
+
+h1{
+  margin-left: 1.5%;
+}
+
+nav a{
+  color: #eeeeee;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav{
+  margin-right: 1.5%;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+
+  background-color: #393E46;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+.container p {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#product_title{
+  margin-left: 15%;
+  font-size: 1.5rem;
+}
+
+.product{
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 20px;
+  display: flex;
+  background-color: #393E46;
+  margin-bottom: 25px;
+}
+
+.product img{
+  max-width: 250px;
+}
+
+.product button{
+  bottom: 10%;
+  right: 10%;
+  color: #eeeeee;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #B55400;
+}
+
+#fb{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#fb>h2{
+  text-align: center;
+}
+
+#fb>p{
+  color: #eeeeee;
+  text-align: center;
+}
+
+#fb>a{
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+#fb img{
+  width: 60px;
+  object-fit: cover;
+}
+
+
+
+#fb_button{
+  display: flex;
+  background-color: #393E46;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+#fb_button:hover{
+  cursor: pointer;
+  background-color: #414750;
+}
+
+@media screen and (max-width:800px){
+
+  .product{
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 20px;
+    display: flex;
+    background-color: #393E46;
+    margin-bottom: 25px;
+  }
+
+  .product img{
+    max-width: 175px;
+  }
+  
+  header{
+    flex-direction: column;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a{
+    margin-bottom: 12px;
+  }
+
+
+}
